@@ -1,0 +1,55 @@
+/* Global body styling */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fdf5e6;
+}
+
+/* Headings */
+h2 {
+    color: #ff6699; /* Slightly deeper pink for contrast */
+    margin: 0;           /* Remove all default margin */
+    line-height: 1.5;
+}
+
+/* Buttons */
+button {
+    background-color: #ffb3c6;  /* Soft pink */
+    border: none;
+    color: white;
+    padding: 15px 30px;
+    margin: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #ff80a1;  /* Slightly darker on hover */
+}
+
+.teddy-container {
+    margin-bottom: 20px;  /* Space between teddy and headings */
+    text-align: center;
+}
+
+.teddy-container img {
+    width: 180px;  /* bigger than before */
+    height: auto;  /* maintain aspect ratio */
+    display: block;
+    margin: 0 auto;  /* center the GIF */
+}
+
+
+/* Page specific soft backgrounds */
+body.login-page { background-color: #fff0f5; }      /* Lavender blush */
+body.love-page { background-color: #ffe4e1; }       /* Misty rose */
+body.only-yes-page { background-color: #fff5f8; }   /* Soft pinkish-white */
+body.waiting-page { background-color: #ffe6f2; }    /* Light pastel pink */

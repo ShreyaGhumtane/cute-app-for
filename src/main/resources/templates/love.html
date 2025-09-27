@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Do you love me?</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <div class="teddy-container">
+    <img th:src="@{/images/love_you_page.gif}" alt="Login Teddy">
+  </div>
+<h2>Do you love me dear❤?</h2>
+<form th:action="@{/love/answer}" method="get">
+  <button type="submit" name="answer" value="yes">Yes</button>
+  <button type="submit" name="answer" value="no">No</button>
+</form>
+</body>
+</html>
