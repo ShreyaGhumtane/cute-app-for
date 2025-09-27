@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Teddy Page</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="teddy-container">
+        <img th:src="@{/images/welcome.gif}" alt="Login Teddy">
+    </div>
+    <h1>Welcome, my love! 🧸❤️</h1>
+    <p>You successfully logged in!</p>
+
+    <form th:action="@{love}" method="get">
+        <button type="submit">Let's go</button>
+    </form>
+</body>
+</html>

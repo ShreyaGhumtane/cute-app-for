@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Try Again</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<div class="teddy-container">
+  <img th:src="@{/images/noanswer.gif}" alt="Login Teddy">
+</div>
+<h2>Only YES is allowed now😉</h2>
+<form th:action="@{/onlyYes/answer}" method="get">
+  <button type="submit" name="answer" value="yes">Yes</button>
+</form>
+</body>
+</html>
